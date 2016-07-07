@@ -71,4 +71,4 @@ def infix_to_postfix(infixexpr):
 if __name__ == "__main__":
     expr = ["A * B + C * D", "( A + B ) * C - ( D - E ) * ( F + G )"]
     for e in expr:
-        print infix_to_postfix(e)
+        print (infix_to_postfix(e))

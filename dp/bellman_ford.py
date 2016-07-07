@@ -41,4 +41,4 @@ def get_distances(graph, s):
         return dist
     return "Graph contains a negative cycle"
 
-print get_distances(graph, 's')
+print (get_distances(graph, 's'));

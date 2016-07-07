@@ -53,6 +53,6 @@ def negative_cost_cycle(D):
 n = 1000
 gr = make_matrix("g1.txt", n)
 #D = floyd_warshall(gr)
-print fastfloyd(array(gr))
+print (fastfloyd(array(gr)));
 # print get_min_dist(D)
 # print D

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{aca99343-ccb9-4073-ba53-6e317e5db76b}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>misc\GCD.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{dc7ba335-e9f2-478a-b680-84c36009df3f}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="dp\kpdata.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dp\bellman_ford.py" />
+    <Compile Include="dp\coinchange.py" />
+    <Compile Include="dp\dijkstra.py" />
+    <Compile Include="dp\floyd.py" />
+    <Compile Include="dp\johnsons_apsp.py" />
+    <Compile Include="dp\kadane.py" />
+    <Compile Include="dp\kp.py" />
+    <Compile Include="dp\lcs.py" />
+    <Compile Include="dp\longest_subsequence.py" />
+    <Compile Include="dp\max_subsquare_matrix.py" />
+    <Compile Include="graphs\clustering.py" />
+    <Compile Include="graphs\digraph.py" />
+    <Compile Include="graphs\eulerian_tour.py" />
+    <Compile Include="graphs\graph.py" />
+    <Compile Include="graphs\graph_algorithms.py" />
+    <Compile Include="graphs\__init__.py" />
+    <Compile Include="heaps\heapsort.py" />
+    <Compile Include="heaps\maxheap.py" />
+    <Compile Include="heaps\minheap.py" />
+    <Compile Include="heaps\__init__.py" />
+    <Compile Include="lists\queue.py" />
+    <Compile Include="lists\singlylinkedlist.py" />
+    <Compile Include="lists\stack-adt.py" />
+    <Compile Include="lists\__init__.py" />
+    <Compile Include="misc\GCD.py" />
+    <Compile Include="misc\max_area_histogram.py" />
+    <Compile Include="misc\rabin_miller_primality_test.py" />
+    <Compile Include="misc\shuffle.py" />
+    <Compile Include="misc\sieve_of_eratosthenes.py" />
+    <Compile Include="sorting and basics\binary_search.py" />
+    <Compile Include="sorting and basics\countinversion.py" />
+    <Compile Include="sorting and basics\karatsuba.py" />
+    <Compile Include="sorting and basics\quicksort.py" />
+    <Compile Include="sorting and basics\scheduling.py" />
+    <Compile Include="sorting and basics\selection_deter.py" />
+    <Compile Include="sorting and basics\selection_random.py" />
+    <Compile Include="sorting and basics\sorting.py" />
+    <Compile Include="tests\assign.py" />
+    <Compile Include="tests\digraph_test.py" />
+    <Compile Include="tests\gcd_test.py" />
+    <Compile Include="tests\graph_algorithms_test.py" />
+    <Compile Include="tests\graph_test.py" />
+    <Compile Include="tests\heap_test.py" />
+    <Compile Include="tests\lcs_test.py" />
+    <Compile Include="tests\sieve_test.py" />
+    <Compile Include="tests\singly_linked_list_test.py" />
+    <Compile Include="tests\unionfind_test.py" />
+    <Compile Include="tests\__init__.py" />
+    <Compile Include="trees\binarysearchtree.py" />
+    <Compile Include="trees\trie.py" />
+    <Compile Include="union_find\unionfind.py" />
+    <Compile Include="union_find\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dp" />
+    <Folder Include="graphs" />
+    <Folder Include="heaps" />
+    <Folder Include="lists" />
+    <Folder Include="misc" />
+    <Folder Include="sorting and basics" />
+    <Folder Include="tests" />
+    <Folder Include="trees" />
+    <Folder Include="union_find" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
+    <InterpreterReference Include="{dc7ba335-e9f2-478a-b680-84c36009df3f}\3.5" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>

@@ -19,6 +19,6 @@ def coinchange(total, coins):
     return table[total][M-1]
 
 if __name__ == "__main__":
-    print coinchange(10, [2, 3, 5, 6]) # 5
-    print coinchange(5, [2, 3, 5])     # 2
-    print coinchange(4, [1, 2, 3])     # 4
+    print (coinchange(10, [2, 3, 5, 6])) # 5
+    print (coinchange(5, [2, 3, 5]))     # 2
+    print (coinchange(4, [1, 2, 3]) )    # 4

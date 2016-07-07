@@ -237,4 +237,4 @@ if __name__ == "__main__":
             gr.add_node(v)
         gr.add_edge((u, v), int(w))
 
-    print "Min Spacing - %s " % (get_max_spacing(max_k_clustering(gr, 4)))
+    print ("Min Spacing - %s " % (get_max_spacing(max_k_clustering(gr, 4))));

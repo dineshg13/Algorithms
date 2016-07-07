@@ -73,7 +73,7 @@ class SinglyLinkedList(object):
 
 if __name__ == "__main__":
     list1 = SinglyLinkedList(range(0, 100, 10))
-    print list1 # testing repr
-    print 50 in list1, 110 not in list1 # testing contains
+    print (list1) # testing repr
+    print (50 in list1, 110 not in list1) # testing contains
     list1.delete(50) # testing delete
-    print len(list1) == 9, 50 not in list1 # testing size
+    print (len(list1) == 9, 50 not in list1) # testing size

@@ -83,4 +83,4 @@ def max_rectangle_area(histogram):
 
     return max_area
 
-print max_rectangle_area(histogram)
+print (max_rectangle_area(histogram))

@@ -20,4 +20,4 @@ uf = UnionFind()
 # print hamdist(nodes[1], nodes[2])
 for i in range(len(nodes)):
     for j in range(i+1, len(nodes)):
-        print i, j, ham_dist(nodes[i], nodes[j])
+        print (i, j, ham_dist(nodes[i], nodes[j]))
